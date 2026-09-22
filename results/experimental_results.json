@@ -1,0 +1,438 @@
+{
+  "non_iid_sweep": {
+    "0.01": {
+      "FedAvg": {
+        "accuracy_mean": 0.6115,
+        "accuracy_std": 0.21361686887197526,
+        "macro_f1_mean": 0.5071051023336574,
+        "attack_recall_mean": 0.5250387596899225
+      },
+      "Cluster Only": {
+        "accuracy_mean": 0.5613627297682262,
+        "accuracy_std": 0.06220723857378421,
+        "macro_f1_mean": 0.5361542418898172,
+        "attack_recall_mean": 0.5971851210184543
+      },
+      "Trust Only": {
+        "accuracy_mean": 0.5843333333333333,
+        "accuracy_std": 0.17738486093488615,
+        "macro_f1_mean": 0.5034941064489066,
+        "attack_recall_mean": 0.5408527131782946
+      },
+      "Cluster + Trust (Centroid)": {
+        "accuracy_mean": 0.658786323484787,
+        "accuracy_std": 0.18975721969493956,
+        "macro_f1_mean": 0.5759230328113669,
+        "attack_recall_mean": 0.5713721175303744
+      },
+      "Cluster + Trust (Learnable Head)": {
+        "accuracy_mean": 0.6065272078504101,
+        "accuracy_std": 0.2074867993998839,
+        "macro_f1_mean": 0.5308400539036878,
+        "attack_recall_mean": 0.5657407407407408
+      }
+    },
+    "0.05": {
+      "FedAvg": {
+        "accuracy_mean": 0.8971666666666667,
+        "accuracy_std": 0.07286555351391279,
+        "macro_f1_mean": 0.820217912907475,
+        "attack_recall_mean": 0.7750937910172416
+      },
+      "Cluster Only": {
+        "accuracy_mean": 0.9150260696325164,
+        "accuracy_std": 0.06025148905438078,
+        "macro_f1_mean": 0.8526312382505554,
+        "attack_recall_mean": 0.6653333699196883
+      },
+      "Trust Only": {
+        "accuracy_mean": 0.8903333333333334,
+        "accuracy_std": 0.06576515456954053,
+        "macro_f1_mean": 0.8152091585618684,
+        "attack_recall_mean": 0.6826314451472358
+      },
+      "Cluster + Trust (Centroid)": {
+        "accuracy_mean": 0.8856864047163898,
+        "accuracy_std": 0.09283616046643633,
+        "macro_f1_mean": 0.857795295071145,
+        "attack_recall_mean": 0.6599139582163592
+      },
+      "Cluster + Trust (Learnable Head)": {
+        "accuracy_mean": 0.8803688060232288,
+        "accuracy_std": 0.061566854954103745,
+        "macro_f1_mean": 0.7824654500617635,
+        "attack_recall_mean": 0.5976339447458502
+      }
+    },
+    "0.1": {
+      "FedAvg": {
+        "accuracy_mean": 0.9445,
+        "accuracy_std": 0.06649937343063218,
+        "macro_f1_mean": 0.9181506406824513,
+        "attack_recall_mean": 0.8666666666666667
+      },
+      "Cluster Only": {
+        "accuracy_mean": 0.9042142262202232,
+        "accuracy_std": 0.1340498134602533,
+        "macro_f1_mean": 0.9150733545758757,
+        "attack_recall_mean": 0.8685144103413739
+      },
+      "Trust Only": {
+        "accuracy_mean": 0.9436666666666667,
+        "accuracy_std": 0.06603197878469358,
+        "macro_f1_mean": 0.9173520142574075,
+        "attack_recall_mean": 0.8666666666666667
+      },
+      "Cluster + Trust (Centroid)": {
+        "accuracy_mean": 0.8842139763451607,
+        "accuracy_std": 0.12138429968533852,
+        "macro_f1_mean": 0.8927554778428051,
+        "attack_recall_mean": 0.7760706313637259
+      },
+      "Cluster + Trust (Learnable Head)": {
+        "accuracy_mean": 0.950524487756122,
+        "accuracy_std": 0.06890858258245693,
+        "macro_f1_mean": 0.926001197794751,
+        "attack_recall_mean": 0.8675600096741037
+      }
+    },
+    "0.5": {
+      "FedAvg": {
+        "accuracy_mean": 1.0,
+        "accuracy_std": 0.0,
+        "macro_f1_mean": 1.0,
+        "attack_recall_mean": 1.0
+      },
+      "Cluster Only": {
+        "accuracy_mean": 1.0,
+        "accuracy_std": 0.0,
+        "macro_f1_mean": 1.0,
+        "attack_recall_mean": 1.0
+      },
+      "Trust Only": {
+        "accuracy_mean": 1.0,
+        "accuracy_std": 0.0,
+        "macro_f1_mean": 1.0,
+        "attack_recall_mean": 1.0
+      },
+      "Cluster + Trust (Centroid)": {
+        "accuracy_mean": 0.9998333333333335,
+        "accuracy_std": 0.00023570226039548988,
+        "macro_f1_mean": 0.9998528489858293,
+        "attack_recall_mean": 0.9331096196868008
+      },
+      "Cluster + Trust (Learnable Head)": {
+        "accuracy_mean": 0.9996666666666667,
+        "accuracy_std": 0.00047140452079103207,
+        "macro_f1_mean": 0.9996015439907797,
+        "attack_recall_mean": 0.932991452991453
+      }
+    },
+    "1.0": {
+      "FedAvg": {
+        "accuracy_mean": 0.9998333333333335,
+        "accuracy_std": 0.00023570226039548988,
+        "macro_f1_mean": 0.9998065088020356,
+        "attack_recall_mean": 1.0
+      },
+      "Cluster Only": {
+        "accuracy_mean": 0.9998333333333335,
+        "accuracy_std": 0.00023570226039548988,
+        "macro_f1_mean": 0.9998529556742985,
+        "attack_recall_mean": 1.0
+      },
+      "Trust Only": {
+        "accuracy_mean": 0.9998333333333335,
+        "accuracy_std": 0.00023570226039548988,
+        "macro_f1_mean": 0.9998529556742985,
+        "attack_recall_mean": 1.0
+      },
+      "Cluster + Trust (Centroid)": {
+        "accuracy_mean": 1.0,
+        "accuracy_std": 0.0,
+        "macro_f1_mean": 1.0,
+        "attack_recall_mean": 1.0
+      },
+      "Cluster + Trust (Learnable Head)": {
+        "accuracy_mean": 1.0,
+        "accuracy_std": 0.0,
+        "macro_f1_mean": 1.0,
+        "attack_recall_mean": 1.0
+      }
+    }
+  },
+  "byzantine_sweep": {
+    "0.0": {
+      "FedAvg": {
+        "accuracy_mean": 0.8971666666666667,
+        "accuracy_std": 0.07286555351391279,
+        "attack_recall_mean": 0.7750937910172416
+      },
+      "Trust Only": {
+        "accuracy_mean": 0.8903333333333334,
+        "accuracy_std": 0.06576515456954053,
+        "attack_recall_mean": 0.6826314451472358
+      },
+      "Cluster + Trust (Centroid)": {
+        "accuracy_mean": 0.8856864047163898,
+        "accuracy_std": 0.09283616046643633,
+        "attack_recall_mean": 0.6599139582163592
+      },
+      "Cluster + Trust (Learnable Head)": {
+        "accuracy_mean": 0.8803688060232288,
+        "accuracy_std": 0.061566854954103745,
+        "attack_recall_mean": 0.5976339447458502
+      }
+    },
+    "0.1": {
+      "FedAvg": {
+        "accuracy_mean": 0.9036666666666666,
+        "accuracy_std": 0.061059169845504975,
+        "attack_recall_mean": 0.6434543284925679
+      },
+      "Trust Only": {
+        "accuracy_mean": 0.89,
+        "accuracy_std": 0.0873679956658425,
+        "attack_recall_mean": 0.6215120282094672
+      },
+      "Cluster + Trust (Centroid)": {
+        "accuracy_mean": 0.8970428049378575,
+        "accuracy_std": 0.05383622903942233,
+        "attack_recall_mean": 0.6510324474905116
+      },
+      "Cluster + Trust (Learnable Head)": {
+        "accuracy_mean": 0.9398531514296131,
+        "accuracy_std": 0.02538537739395416,
+        "attack_recall_mean": 0.7087563909728187
+      }
+    },
+    "0.2": {
+      "FedAvg": {
+        "accuracy_mean": 0.9226666666666666,
+        "accuracy_std": 0.03828039823315439,
+        "attack_recall_mean": 0.6837291063125778
+      },
+      "Trust Only": {
+        "accuracy_mean": 0.9223333333333333,
+        "accuracy_std": 0.05685117022151395,
+        "attack_recall_mean": 0.7407254034523699
+      },
+      "Cluster + Trust (Centroid)": {
+        "accuracy_mean": 0.8760685334156099,
+        "accuracy_std": 0.07214317808509614,
+        "attack_recall_mean": 0.6249215901246968
+      },
+      "Cluster + Trust (Learnable Head)": {
+        "accuracy_mean": 0.8671805746310994,
+        "accuracy_std": 0.1378883935677332,
+        "attack_recall_mean": 0.6736951115224734
+      }
+    },
+    "0.3": {
+      "FedAvg": {
+        "accuracy_mean": 0.7513333333333333,
+        "accuracy_std": 0.18279557495251963,
+        "attack_recall_mean": 0.4228027464436159
+      },
+      "Trust Only": {
+        "accuracy_mean": 0.7916666666666666,
+        "accuracy_std": 0.15816675447837394,
+        "attack_recall_mean": 0.47257346719128673
+      },
+      "Cluster + Trust (Centroid)": {
+        "accuracy_mean": 0.7962372728054886,
+        "accuracy_std": 0.09642965874538666,
+        "attack_recall_mean": 0.4854091107111241
+      },
+      "Cluster + Trust (Learnable Head)": {
+        "accuracy_mean": 0.7094122789587557,
+        "accuracy_std": 0.16254729861815778,
+        "attack_recall_mean": 0.42852689983197717
+      }
+    },
+    "0.5": {
+      "FedAvg": {
+        "accuracy_mean": 0.4373333333333333,
+        "accuracy_std": 0.2516576157312859,
+        "attack_recall_mean": 0.20750649978837898
+      },
+      "Trust Only": {
+        "accuracy_mean": 0.5306666666666667,
+        "accuracy_std": 0.31181787775701525,
+        "attack_recall_mean": 0.34094119378968163
+      },
+      "Cluster + Trust (Centroid)": {
+        "accuracy_mean": 0.5601413633010335,
+        "accuracy_std": 0.3467777617471046,
+        "attack_recall_mean": 0.39215805764463485
+      },
+      "Cluster + Trust (Learnable Head)": {
+        "accuracy_mean": 0.46887648100691576,
+        "accuracy_std": 0.320817250679648,
+        "attack_recall_mean": 0.2336566607276099
+      }
+    }
+  },
+  "metric_comparison_7d": {
+    "FedAvg": {
+      "Accuracy": 0.9226666666666666,
+      "Macro-F1": 0.8826999167783756,
+      "Attack-Class Recall": 0.6837291063125778,
+      "Variance (Std Dev)": 0.03828039823315439,
+      "Convergence Rounds (Target 70%)": 3.6666666666666665,
+      "Accuracy History (Mean)": [
+        0.46849999999999997,
+        0.5906666666666668,
+        0.693,
+        0.6703333333333333,
+        0.7835000000000001,
+        0.8131666666666666,
+        0.8450000000000001,
+        0.7003333333333334,
+        0.6998333333333333,
+        0.7451666666666666,
+        0.831,
+        0.8645,
+        0.8438333333333333,
+        0.8835000000000001,
+        0.8231666666666667,
+        0.8981666666666667,
+        0.9106666666666667,
+        0.8808333333333334,
+        0.9161666666666667,
+        0.9226666666666666
+      ]
+    },
+    "Cluster Only": {
+      "Accuracy": 0.8475795189318428,
+      "Macro-F1": 0.7755787534942483,
+      "Attack-Class Recall": 0.6050272920194576,
+      "Variance (Std Dev)": 0.022042239129866272,
+      "Convergence Rounds (Target 70%)": 5.666666666666667,
+      "Accuracy History (Mean)": [
+        0.3193855113735174,
+        0.48042719091669617,
+        0.5908892259664373,
+        0.5855622902002212,
+        0.7170993330341157,
+        0.7993902059959032,
+        0.6433108025574293,
+        0.7915750264228526,
+        0.7368260219706997,
+        0.8154170156014234,
+        0.8042639214858106,
+        0.8590474686898975,
+        0.8703710549819995,
+        0.8479108471904574,
+        0.8515487109092806,
+        0.8838763847347056,
+        0.8723903705822745,
+        0.8314008695785308,
+        0.879548712906284,
+        0.8475795189318428
+      ]
+    },
+    "Trust Only": {
+      "Accuracy": 0.9223333333333333,
+      "Macro-F1": 0.855620456481819,
+      "Attack-Class Recall": 0.7407254034523699,
+      "Variance (Std Dev)": 0.05685117022151395,
+      "Convergence Rounds (Target 70%)": 3.6666666666666665,
+      "Accuracy History (Mean)": [
+        0.47,
+        0.5931666666666667,
+        0.6358333333333333,
+        0.7709999999999999,
+        0.7763333333333332,
+        0.8329999999999999,
+        0.7276666666666666,
+        0.8233333333333334,
+        0.8296666666666667,
+        0.8726666666666666,
+        0.8255,
+        0.8103333333333333,
+        0.7348333333333333,
+        0.8458333333333333,
+        0.8618333333333332,
+        0.8651666666666666,
+        0.8878333333333334,
+        0.8788333333333335,
+        0.9138333333333333,
+        0.9223333333333333
+      ]
+    },
+    "Cluster + Trust (Centroid)": {
+      "Accuracy": 0.8760685334156099,
+      "Macro-F1": 0.8120302991718594,
+      "Attack-Class Recall": 0.6249215901246968,
+      "Variance (Std Dev)": 0.07214317808509614,
+      "Convergence Rounds (Target 70%)": 7.333333333333333,
+      "Accuracy History (Mean)": [
+        0.3183860111236423,
+        0.439139811296483,
+        0.5640767009102842,
+        0.6115512960303066,
+        0.7475799351406547,
+        0.7353759685258936,
+        0.7748968686652346,
+        0.7632167177317103,
+        0.761892624699971,
+        0.6934476598696989,
+        0.8022176297798488,
+        0.8192140511495833,
+        0.8253837988598108,
+        0.8215773540968443,
+        0.8103766415160719,
+        0.8345333134298651,
+        0.8755423076839869,
+        0.8625323138464068,
+        0.9023642308882188,
+        0.8760685334156099
+      ]
+    },
+    "Cluster + Trust (Learnable Head)": {
+      "Accuracy": 0.8671805746310994,
+      "Macro-F1": 0.8280639064766461,
+      "Attack-Class Recall": 0.6736951115224734,
+      "Variance (Std Dev)": 0.1378883935677332,
+      "Convergence Rounds (Target 70%)": 5.333333333333333,
+      "Accuracy History (Mean)": [
+        0.41967619187409294,
+        0.48481272184420615,
+        0.5977159839993423,
+        0.7196339609083237,
+        0.7486174773918401,
+        0.7400939214042662,
+        0.795088182182635,
+        0.8195686990836916,
+        0.8487124661112667,
+        0.7614494012567476,
+        0.8192303733248262,
+        0.8202355312520231,
+        0.8447128834017888,
+        0.8526864858446568,
+        0.9055114915069938,
+        0.8943415773798084,
+        0.7853959675174068,
+        0.8620240701327658,
+        0.8781824078803089,
+        0.8671805746310994
+      ]
+    }
+  },
+  "clustering_validation": {},
+  "communication_cost": {
+    "FedAvg": {
+      "per_round_kb": 976.5625,
+      "total_mb": 19.073486328125
+    },
+    "IFCA": {
+      "per_round_kb": 1953.125,
+      "total_mb": 38.14697265625
+    },
+    "Proposed": {
+      "per_round_kb": 977.1875,
+      "total_mb": 19.085693359375
+    }
+  }
+}
