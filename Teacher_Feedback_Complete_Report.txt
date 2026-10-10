@@ -3,46 +3,9 @@
 ====================================================================================================
 
 Paper Title: Adaptive Context-Aware Clustering with Learned Representations for Handling Non-IID Data in Federated IDS
-Authors: Gurnish Singh Sangha, Ishan Bagra, Jai Taneja
-Institution: Indian Institute of Information Technology, Kota (IIIT Kota)
-Mentorship: Dr. Isha Pathak
 GitHub Repository: https://github.com/ishanbagra18/research-paper.git
 
-====================================================================================================
-SECTION 1: SIMPLE SUMMARY OF TEACHER'S FEEDBACK & ANSWERS
-====================================================================================================
 
-Your teacher asked 10 main questions. Here is what each question means in simple language and how we answered it:
-
-1. Teacher Question: Compare "Trust-Only" vs "Cluster + Trust". Why do we need Clustering if Trust alone works?
-   -> Answer in Simple Words: Trust-Only compares every client against ONE single global average. Under non-IID data (where different IoT devices see different attack types), an honest client with unique data looks different from the average and gets wrongly punished as "malicious". Clustering first groups similar honest clients together so Trust is calculated fairly within each group.
-
-2. Teacher Question: Do multi-seed experiments (don't use just 1 run).
-   -> Answer in Simple Words: We ran all experiments across 3 random seeds (Seed 42, 100, 2026) and calculated the exact Mean +/- Standard Deviation (std dev) for every single setting.
-
-3. Teacher Question: Show the full Dirichlet alpha sweep (alpha = 0.01, 0.05, 0.1, 0.5, 1.0).
-   -> Answer in Simple Words: We evaluated all 5 heterogeneity levels. When data is extremely non-IID (alpha = 0.01), Cluster + Trust wins by +7.45% accuracy over Trust-Only. When data is uniform (alpha = 0.5 or 1.0), all methods perform equally well (~100%).
-
-4. Teacher Question: Test multiple Byzantine attacker percentages (0%, 10%, 20%, 30%, 40%, 50%).
-   -> Answer in Simple Words: Under 50% attackers, standard FedAvg collapses to 43.73% accuracy. Trust-Only gets 53.07%. Cluster + Trust stays strongest at 56.01% accuracy and 39.22% attack recall.
-
-5. Teacher Question: Clarify the two "alphas" (Dirichlet alpha vs Student-t kernel alpha).
-   -> Answer in Simple Words: Alpha_dirichlet controls how non-IID the dataset is. Alpha_student (nu = 1.0) is a fixed math parameter for the soft clustering head. We added an ablation table for Alpha_student (0.5, 1.0, 2.0, 5.0).
-
-6. Teacher Question: Prove whether clusters are actually meaningful.
-   -> Answer in Simple Words: We measured Silhouette Score (0.642 under extreme non-IID), Adjusted Rand Index (ARI = 0.785), and proved that Byzantine malicious clients are cleanly isolated into separate outlier clusters.
-
-7. Teacher Question: Explain exactly how the Learnable Clustering Head is trained.
-   -> Answer in Simple Words: Explained the step-by-step encoder architecture, Student-t kernel formula, KL divergence loss, cross-entropy loss, and cluster-wise model parameter aggregation.
-
-8. Teacher Question: Prove the communication overhead numbers (976.56 KB vs 1953.13 KB vs 977.19 KB).
-   -> Answer in Simple Words: Gave the exact byte-by-byte mathematical proof. 16-dimensional signatures add only 64 bytes per client per round (+0.625 KB total), saving 99.8% bandwidth compared to IFCA.
-
-9. Teacher Question: Provide a single consolidated table of all hyperparameters.
-   -> Answer in Simple Words: Provided an 18-row complete system specification table.
-
-10. Teacher Question: Make condition-specific claims (don't claim Cluster + Trust is always superior everywhere).
-    -> Answer in Simple Words: Explicitly stated that Cluster + Trust is specifically needed under HIGH non-IID skew (alpha <= 0.1) and HEAVY Byzantine attacks (30%-50%). Under mild non-IID (alpha >= 0.5) without attacks, Trust-Only and FedAvg suffice.
 
 
 ====================================================================================================
