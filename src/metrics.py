@@ -70,13 +70,22 @@ def evaluate_clustered_fl(cluster_models, client_clusters, client_test_data, num
         'per_class_recall': recalls.tolist()
     }
 
-def compute_clustering_quality(true_labels, pred_clusters):
+def compute_clustering_quality(true_labels, pred_clusters, signatures=None):
     ari = adjusted_rand_score(true_labels, pred_clusters)
     nmi = normalized_mutual_info_score(true_labels, pred_clusters)
-    return {
+    res = {
         'ARI': float(ari),
         'NMI': float(nmi)
     }
+    if signatures is not None and len(np.unique(pred_clusters)) > 1:
+        from sklearn.metrics import silhouette_score
+        try:
+            res['Silhouette'] = float(silhouette_score(signatures, pred_clusters))
+        except Exception:
+            res['Silhouette'] = 0.0
+    else:
+        res['Silhouette'] = 0.0
+    return res
 
 def calculate_communication_bytes(num_clients=10, num_clusters=3, model_params=12500, signature_dim=16, num_rounds=15, bytes_per_float=4):
     model_size_bytes = model_params * bytes_per_float
